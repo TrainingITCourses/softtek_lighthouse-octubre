@@ -1,2 +1,2 @@
-var saludo = 'Hello, World!';
+const saludo = 'Hello, World!';
 console.log(saludo);
