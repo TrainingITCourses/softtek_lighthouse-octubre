@@ -128,3 +128,13 @@ npm install @types/jest ts-jest --save-dev
 # Add coverage script:
 # "test:cov": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
 ```
+
+### Stryker
+
+```bash
+npm install @stryker-mutator/core --save-dev
+npm init stryker@latest
+# Configure Stryker at stryker.conf.mjs
+# add testRunnerNodeArgs: ['--experimental-vm-modules']
+# Run Stryker with: "stryker": "stryker run",
+```

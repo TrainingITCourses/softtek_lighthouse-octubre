@@ -25,11 +25,14 @@
     "lint": "eslint --fix ./src --ext .ts",
     "lint-staged": "lint-staged",
     "prepare": "husky",
+    "stryker": "stryker run",
     "release": "commit-and-tag-version"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.38.0",
+    "@stryker-mutator/core": "^9.2.0",
+    "@stryker-mutator/jest-runner": "^9.2.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.9.1",
     "commit-and-tag-version": "^12.6.0",
