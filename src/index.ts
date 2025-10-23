@@ -1,9 +1,8 @@
-const saludo = 'Hello, World!';
-let i = 0;
-let stars = '';
-for (i = 0; i < 10; i++) {
-  stars += '*';
+import { generateRandomScore } from './random.ts';
+function main() {
+  console.log('Hello, World!');
+  const score: number = generateRandomScore();
+  console.log(`Generated random score: ${score}`);
 }
-console.log(stars);
-console.log(saludo);
-console.log(stars);
+
+main();
