@@ -96,3 +96,35 @@ git commit -m "chore: setup commitlint"
 npm i --save-dev commit-and-tag-version
 # Add to package.json scripts: "release": "commit-and-tag-version",
 ```
+
+## 4. Testing tools
+
+### Modules
+
+- import using `.js` extension for ESM modules
+- Change start script to build and run `dist/index.js`
+- install `tsx` for running Typescript files directly
+
+```bash
+# "build": "tsc"
+npm run build
+# "start": "node dist/index.js"
+# "prestart": "npm run build"
+npm start
+npm install tsx --save-dev
+# "dev": "tsx src/index.ts"
+```
+
+### Jest
+
+```bash
+# Install Jest
+npm install jest --save-dev
+# Install Typescript support for Jest
+npm install @types/jest ts-jest --save-dev
+# Configure Jest for Typescript at jest.config.js
+# Script to run tests in package.json:
+# "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+# Add coverage script:
+# "test:cov": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+```
