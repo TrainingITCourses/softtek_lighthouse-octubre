@@ -1,3 +1,3 @@
 export function generateRandomScore(): number {
-  return Math.floor(Math.random() * -1001);
+  return Math.floor(Math.random() * 101);
 }
