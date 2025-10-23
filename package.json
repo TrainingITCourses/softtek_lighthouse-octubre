@@ -26,7 +26,8 @@
     "lint-staged": "lint-staged",
     "prepare": "husky",
     "stryker": "stryker run",
-    "release": "commit-and-tag-version"
+    "release": "commit-and-tag-version",
+    "lighthouse": "lighthouse https://example.com --output=json --output-path=./lighthouse-report.json"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^20.0.0",
