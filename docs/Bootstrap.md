@@ -72,3 +72,27 @@ npm install lint-staged --save-dev
 # Add to package.json scripts: "lint-staged": "lint-staged",
 # Change Pre-commit hook to run lint-staged
 ```
+
+### Commitlint
+
+```bash
+# Install commitlint
+npm install commitlint --save-dev
+# Install the conventional config
+npm install @commitlint/config-conventional --save-dev
+# Config at commitlint.config.js
+echo "export default { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
+# Add commit-msg hook
+echo "npx --no -- commitlint --edit \$1" > .husky/commit-msg
+# test if commit-msg hook is working
+git add .
+git commit -m "foo: this will fail"
+git commit -m "chore: setup commitlint"
+```
+
+### Commit and tag version
+
+```bash
+npm i --save-dev commit-and-tag-version
+# Add to package.json scripts: "release": "commit-and-tag-version",
+```
