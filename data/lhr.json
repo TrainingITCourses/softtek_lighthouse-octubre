@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-10-23T15:47:53.474Z",
+  "totalUrls": 3,
+  "urls": [
+    {
+      "url": "https://aicode.academy",
+      "name": "AI Code Academy",
+      "dateLastVisited": "2025-10-23T15:47:29.979Z",
+      "scores": {
+        "performance": 0.81,
+        "accessibility": 0.98,
+        "bestPractices": 0.81
+      }
+    },
+    {
+      "url": "https://albertobasalo.dev",
+      "name": "Alberto Basalo site",
+      "dateLastVisited": "2025-10-23T15:47:29.979Z",
+      "scores": {
+        "performance": 0.84,
+        "accessibility": 0.94,
+        "bestPractices": 1
+      }
+    },
+    {
+      "url": "https://aiddbot.com",
+      "name": "AIDD Bot Blog",
+      "dateLastVisited": "2025-10-23T15:47:29.979Z",
+      "scores": {
+        "performance": 0.51,
+        "accessibility": 0.9,
+        "bestPractices": 0.96
+      }
+    }
+  ]
+}
